@@ -76,3 +76,34 @@ remove() - Returns and removes the head of the queue. Throws an exception if the
 poll() - Returns and removes the head of the queue. Returns null if the queue is empty.
  
 size() - Return an integer denoting the total number of elements in the queue at present.
+ 
+ 
+# BigInteger
+ 
+ 
+ Syntax:
+
+1) Declaration:
+
+ int a, b;
+ BigInteger A, B;
+2) Initialization:
+
+ a = 54;
+ b = 23;
+ A = BigInteger.valueOf(54);
+ B = BigInteger.valueOf(37);
+And for Integers available as string you can initialize them as:
+
+ A = new BigInteger(“54”);
+ B = new BigInteger(“123456789123456789”);
+3) Mathematical operations:
+
+ BigInteger C = A.add(B);
+Other similar function are subtract() , multiply(), divide(), remainder()
+
+Extraction of value from BigInteger:
+
+ int x = A.intValue(); // value should be in limit of int x
+ long y = A.longValue(); // value should be in limit of long y
+ String z = A.toString();
